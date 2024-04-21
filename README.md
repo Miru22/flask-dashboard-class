@@ -20,7 +20,6 @@ cd ~/Desktop/flask-dashboard-template-2024
 
 > NOTE: it is important to navigate to the root directory before running any of the commands below.
 
-
 Create new virtual environment (first time only):
 
 ```sh
@@ -47,11 +46,9 @@ pip install -r requirements.txt
 
 You'll also need to obtain a "premium" access [AlphaVantage API Key](https://www.alphavantage.co/support/#api-key) and set it as the `ALPHAVANTAGE_API_KEY` environment variable (see configuration section below).
 
-
 ## Configuration
 
 Create a new file called ".env" in the root directory of your local repository, and place inside contents like the following:
-
 
 ```sh
 # this is the ".env" file...
@@ -64,7 +61,6 @@ ALPHAVANTAGE_API_KEY="________"
 ```
 
 > NOTE: when you push your repository to GitHub, the ".env" file does not show up - this is desired behavior, as designated by the ".gitignore" file, to prevent our secret credentials stored in the ".env" file from being uploaded or exposed on GitHub.
-
 
 ## Usage
 
@@ -86,13 +82,13 @@ flask run
 
 By default, you should be able to view the following routes:
 
-  + http://localhost:5000/
-  + http://localhost:5000/about
-  + http://localhost:5000/hello
-  + http://localhost:5000/hello?name=MJ
-  + http://localhost:5000/stocks/form
-  + http://localhost:5000/stocks/dashboard
-  + http://localhost:5000/stocks/dashboard?symbol=NVDA
+- http://localhost:5000/
+- http://localhost:5000/about
+- http://localhost:5000/hello
+- http://localhost:5000/hello?name=MJ
+- http://localhost:5000/stocks/form
+- http://localhost:5000/stocks/dashboard
+- http://localhost:5000/stocks/dashboard?symbol=NVDA
 
 > NOTE: if you run into issues seeting the site at the localhost:5000 address, try 127.0.0.1:5000 instead!
 
